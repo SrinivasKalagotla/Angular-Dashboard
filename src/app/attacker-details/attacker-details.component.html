@@ -1,0 +1,20 @@
+<h2>Attacker Details</h2> 
+
+<hr/>
+<div *ngIf="attacker">
+        <div>
+            <label><b>Username: </b></label> {{attacker.username}}
+        </div>
+    <br>
+        <div>
+            <label><b>IP Address: </b></label> {{attacker.ip}}
+        </div>
+  <br>
+        <div>
+            <label><b>Location: </b></label> {{attacker.location}}
+        </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Attacker List</button><br>

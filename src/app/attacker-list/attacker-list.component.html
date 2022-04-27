@@ -1,0 +1,71 @@
+<!-- <div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">Dashboard</div>
+    <div class="page__content shadow p-3 position-relative">
+      <div class="page__content-data position-absolute text-center">
+        <div class="card-body">
+                          <div class="table-responsive">
+                              <table class="table">
+                                  <thead class=" text-primary">
+                                    <tr>
+                                      <th>ID</th>
+                                      <th>Username</th>
+                                      <th>IP Address</th>
+                                      <th>Location</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr *ngFor="let attacker of attackers | async">
+                                      <td>{{attacker.id}}</td>
+                                      <td>{{attacker.username}}</td>
+                                      <td>{{attacker.ip}}</td>
+                                      <td>{{attacker.location}}</td>
+                                      <td><button (click)="deleteAttacker(attacker.id)" class="btn btn-danger">Delete</button>
+                                          <button (click)="attackerDetails(attacker.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+      </div>
+    </div>
+  </div>
+   -->
+   <div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Attackers List</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                  <tr>
+                                    <th>ID</th>
+                                    <th>Username</th>
+                                    <th>IP Address</th>
+                                    <th>Location</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr *ngFor="let attacker of attackers | async">
+                                    <td>{{attacker.id}}</td>
+                                    <td>{{attacker.username}}</td>
+                                    <td>{{attacker.ip}}</td>
+                                    <td>{{attacker.location}}</td>
+                                    <td><button (click)="deleteAttacker(attacker.id)" class="btn btn-danger">Delete</button>
+                                        <button (click)="attackerDetails(attacker.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
